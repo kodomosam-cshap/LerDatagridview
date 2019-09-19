@@ -1,0 +1,20 @@
+int i=0;           
+                
+if (dataGridViewImpressao.RowCount > 0)
+{
+  foreach (DataGridViewRow row in dataGridViewImpressao.Rows)
+  {
+                        
+     object QTD = row.Cells[0].Value;
+     dadosQTD[i] = QTD.ToString();
+
+     object ITEM = row.Cells[1].Value;
+     dadosITEM[i] = ITEM.ToString();
+
+     object VALOR = row.Cells[2].Value;
+     dadosVALOR[i] = VALOR.ToString();
+
+     i++;
+
+   }                    
+}
